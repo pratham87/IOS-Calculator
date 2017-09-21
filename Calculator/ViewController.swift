@@ -33,6 +33,9 @@ class ViewController: UIViewController {
     @IBAction func buttons(_ sender: UIButton) {
         if result.text != "" && sender.tag != 11 && sender.tag != 16{
             prevNum = Double(result.text!)!
+            if sender.tag == 14{
+                result.text = "-"
+            }
             if sender.tag == 15{
                 result.text = "+"
             }
